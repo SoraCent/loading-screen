@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
+		<title>Loading</title>
+	</head>
+	<body onclick="loadsong()">
+		<audio id="song" loop="" src="" autoplay=""></audio>
+		<header>
+			<i class="fas fa-volume-up" id="change_volume"onclick="songmute()"></i>
+			-
+			<i class="fas fa-music"></i>
+			<a id="song_title" href="#" target="_blank">Kein Lied</a>
+		</header>
+		<div class="main_div">
+			<i class="fas fa-sync fa-spin fa-lg"></i>
+			<br>
+			<span id="text" class="noselect">Loading Please Wait</span>
+		</div>
+		<div class="nightmode_div">
+			<i class="fas fa-moon"></i>
+			<label class="switch">
+			  <input id="switchToggle" type="checkbox" onchange="changeTheme(this)">
+			  <span class="slider round"></span>
+			</label>
+		</div>
+		<i class="far fa-eye" onclick="letitrain()"></i>
+		<canvas id="canvas"></canvas>
+		<div id="menu" class="menu">
+			<ul class="menu-options">
+				<li class="menu-option">NoNoNoNo!</li>
+			</ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
